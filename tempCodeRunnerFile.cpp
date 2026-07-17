@@ -1,1 +1,1 @@
-ptr1 = new int;
+Game

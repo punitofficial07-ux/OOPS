@@ -1,4 +1,5 @@
 #include<iostream>
+#include<cstring>
 using namespace std;
 struct Student{
 	int roll;
@@ -6,6 +7,13 @@ struct Student{
 	float marks;
 };
 int main(){
+	Student d1;
+	d1.roll=101;
+	d1.marks=89.5;
+	strcpy(d1.name,"John");
+	cout<<"Roll Number: "<<d1.roll<<endl;
+	cout<<"Name: "<<d1.name<<endl;
+	cout<<"Marks: "<<d1.marks<<endl;
 	int n;
 	cout<<"Enter the number of students: ";
 	cin>>n;

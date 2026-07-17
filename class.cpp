@@ -1,31 +1,33 @@
 #include<iostream>
 using namespace std;
 class Student{
-	
-	public:
+	private :
 		int age;
-		char name[50];
+		char name[20];
 		float marks;
+	public:
 		Student(){
 			cout<<"constructor called"<<endl;
 		};
-	public:	
+
 		void input(){
-			cout<<"enter age: "<<endl;
+			cout<<"enter age :";
 			cin>>age;
-			cout<<"name: "<<endl;
+			cout<<"name :";
 			cin>>name;
-			cout<<"marks: "<<endl;
+			cout<<"marks :";
 			cin>>marks;
 		}
 		void output(){
-			cout<<age<<" " <<name<<" "<<marks<<endl;
+			cout<<"Age :"<<age<<endl;
+			cout<<"Name :"<<name<<endl;
+			cout<<"Marks :"<<marks<<endl;
 		}
 				
 };
 int main(){
 	Student S1,S2;
-	
+
 	S1.input();
 	S1.output();
 
